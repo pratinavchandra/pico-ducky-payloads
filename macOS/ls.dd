@@ -1,0 +1,9 @@
+REM Opening terminal
+DELAY 2000
+GUI space
+DELAY 500
+STRING terminal
+ENTER
+DELAY 1000
+STRING python3 -c 'import os; os.system("ls")'
+ENTER
