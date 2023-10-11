@@ -1,4 +1,4 @@
-REM Opening terminal
+REM Opens terminal and runs a python web server as a background process, then closes the terminal
 DELAY 2000
 GUI space
 DELAY 500
