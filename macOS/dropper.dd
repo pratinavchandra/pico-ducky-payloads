@@ -1,4 +1,4 @@
-REM Downloades and executes a payload from an external url using nscurl
+REM Downloads and executes a payload from an external url using nscurl
 DELAY 2000
 GUI space
 DELAY 500
